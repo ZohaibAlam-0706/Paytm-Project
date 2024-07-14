@@ -56,7 +56,9 @@ export const authOptions = {
     secret: process.env.JWT_SECRET || "secret",
     callbacks: {
         // TODO: can u fix the type here? Using any is bad
+        //@ts-ignore
         async session({ token, session }: any) {
+            //@ts-ignore
             session.user.id = token.sub
 
             return session
