@@ -1,7 +1,7 @@
 import { Card } from "@repo/ui/card"
 import { getServerSession } from "next-auth";
 import { authOptions } from "../app/lib/auth";
-import prisma from "@repo/db/client";
+// import prisma from "@repo/db/client";
 
 async function currentUserId() {
     const session = await getServerSession(authOptions);

@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../lib/auth";
 import prisma from "@repo/db/client";
-import { AddMoney } from "../../../components/AddMoneyCard";
+// import { AddMoney } from "../../../components/AddMoneyCard";
 import { BalanceCard } from "../../../components/BalanceCard";
 import { P2pTransfer } from "../../../components/P2pTransactions";
 
